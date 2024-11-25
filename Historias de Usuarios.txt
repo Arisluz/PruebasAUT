@@ -1,0 +1,70 @@
+## Historia de Usuario 1: Login Exitoso
+
+### Descripción
+**Como** usuario de la aplicación, quiero poder iniciar sesión de manera correcta con mi nombre de usuario y contraseña, para poder acceder a mis datos personales y a las funcionalidades del sistema.
+
+### Criterios de Aceptación
+1. El sistema debe verificar que el usuario ha ingresado un nombre de usuario y una contraseña válidos.
+2. Si las credenciales son correctas, el usuario debe ser redirigido a la página principal del sistema.
+3. El mensaje de bienvenida debe mostrarse en la página principal.
+4. El login debe realizarse en menos de 5 segundos.
+5. El sistema debe mostrar un mensaje de error si las credenciales son incorrectas.
+
+### Criterios de Rechazo
+1. Si el usuario no proporciona un nombre de usuario o contraseña, el sistema no debe permitir el inicio de sesión.
+2. Si las credenciales son incorrectas, el sistema no debe permitir el acceso y debe mostrar un mensaje de error.
+
+### Valor de Negocio
+El inicio de sesión es una de las funcionalidades principales del sistema, y se necesita que funcione correctamente para que el usuario pueda acceder a la plataforma de forma segura.
+
+### Priorización
+Alta: El inicio de sesión es crítico para la operación del sistema, ya que es el primer paso para acceder a la mayoría de las funcionalidades.
+
+---
+
+## Historia de Usuario 2: Recuperación de Contraseña
+
+### Descripción
+**Como** usuario que ha olvidado su contraseña, quiero poder recuperarla fácilmente a través de un correo electrónico, para poder acceder nuevamente a mi cuenta.
+
+### Criterios de Aceptación
+1. El usuario debe poder ingresar su correo electrónico en un formulario de recuperación de contraseña.
+2. El sistema debe enviar un enlace para restablecer la contraseña al correo electrónico proporcionado.
+3. El enlace debe expirar después de 24 horas por razones de seguridad.
+4. El usuario debe poder acceder al enlace y cambiar su contraseña.
+5. La nueva contraseña debe ser válida según las políticas de seguridad del sistema (mínimo 8 caracteres, combinación de letras y números).
+
+### Criterios de Rechazo
+1. Si el correo electrónico proporcionado no está registrado, el sistema debe mostrar un mensaje indicando que no se encuentra el usuario en la base de datos.
+2. Si el enlace de restablecimiento de contraseña ya ha expirado, el usuario debe recibir un mensaje informando de la expiración y se le debe ofrecer la opción de generar un nuevo enlace.
+
+### Valor de Negocio
+Permitir a los usuarios recuperar su contraseña mejora la experiencia de usuario y reduce la cantidad de bloqueos de cuentas, lo que mejora la retención de usuarios.
+
+### Priorización
+Media: Aunque importante, la funcionalidad de recuperación de contraseña no es tan crítica como el inicio de sesión.
+
+---
+
+## Historia de Usuario 3: Registro de Nuevo Usuario
+
+### Descripción
+**Como** nuevo usuario, quiero registrarme en la plataforma proporcionando mi correo electrónico, nombre de usuario y contraseña, para poder crear una cuenta y acceder a la plataforma.
+
+### Criterios de Aceptación
+1. El sistema debe permitir al usuario ingresar un correo electrónico, nombre de usuario y contraseña para completar el registro.
+2. El sistema debe validar que el correo electrónico no esté ya registrado en la base de datos.
+3. El nombre de usuario debe ser único y no repetirse con otros usuarios registrados.
+4. La contraseña debe cumplir con los requisitos de seguridad (mínimo 8 caracteres, al menos una letra mayúscula, una minúscula, y un número).
+5. El sistema debe enviar un correo de confirmación al usuario con un enlace para activar su cuenta.
+
+### Criterios de Rechazo
+1. Si el correo electrónico o nombre de usuario ya están registrados, el sistema debe mostrar un mensaje de error.
+2. Si la contraseña no cumple con los requisitos de seguridad, el sistema debe mostrar un mensaje de error indicando los requisitos incumplidos.
+
+### Valor de Negocio
+El registro es una función clave que permitirá a los usuarios acceder a la plataforma y disfrutar de todas las funcionalidades personalizadas.
+
+### Priorización
+Alta: El registro es esencial para el acceso a la plataforma y su funcionamiento.
+
